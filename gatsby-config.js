@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Duotone',
   },
   pathPrefix: "/react-duotone",
   plugins: ['gatsby-plugin-react-helmet'],
