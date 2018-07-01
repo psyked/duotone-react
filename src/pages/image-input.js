@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import { connect } from "react-redux"
 import { Segment, Header, Button } from 'semantic-ui-react'
 import DuotoneRender from '../components/duotone-render'
-import { SET_SOURCE } from '../reducers/index'
+import { SET_SOURCE, SET_FILTER } from '../reducers/index'
 
 const ImageInput = ({ selectFile }) => (
   <Segment basic>
@@ -46,6 +46,17 @@ const mapDispatchToProps = (dispatch, props) => {
                 data: imageData,
                 width: imageWidth,
                 height: imageHeight
+              }
+            })
+
+            dispatch({
+              type: SET_FILTER,
+              payload: {
+                filter: {
+                  id: "spotify_peachy",
+                  name: "Spotify Peachy",
+                  colours: ["#ed3ea4", "#fec76c"]
+                }
               }
             })
           };

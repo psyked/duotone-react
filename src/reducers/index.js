@@ -1,11 +1,18 @@
 export const SET_SOURCE = 'SET_SOURCE'
+export const SET_FILTER = 'SET_FILTER'
 
 const reducer = (state, { type, payload }) => {
-    console.log(payload)
     if (type === SET_SOURCE) {
+        const { data: imageData } = payload
         return {
             ...state,
-            imageData: payload.data
+            imageData
+        }
+    } else if (type === SET_FILTER) {
+        const { filter } = payload
+        return {
+            ...state,
+            filter
         }
     }
     return state
