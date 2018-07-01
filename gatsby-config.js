@@ -2,6 +2,6 @@ module.exports = {
   siteMetadata: {
     title: 'Duotone',
   },
-  pathPrefix: "/react-duotone",
+  pathPrefix: "/duotone-react",
   plugins: ['gatsby-plugin-react-helmet'],
 }
