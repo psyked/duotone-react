@@ -4,7 +4,7 @@ import { Segment } from 'semantic-ui-react'
 
 const SecondPage = () => (
   <Segment>
-    <p>Index</p>
+    <p>Image Input</p>
   </Segment>
 )
 
