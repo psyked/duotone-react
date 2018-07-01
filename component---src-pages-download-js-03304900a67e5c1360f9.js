@@ -1,0 +1,2 @@
+webpackJsonp([52357358931610],{575:function(e,t,l){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var u=l(2),a=n(u),d=l(85),f=(n(d),l(96)),r=l(128),c=n(r),o=function(){return a.default.createElement(f.Segment,{basic:!0},a.default.createElement(f.Segment,null,a.default.createElement("p",null,"Download")),a.default.createElement(f.Segment,null,a.default.createElement(c.default,null)))};t.default=o,e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-download-js-03304900a67e5c1360f9.js.map

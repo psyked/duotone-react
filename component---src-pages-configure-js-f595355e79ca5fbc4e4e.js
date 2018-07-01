@@ -1,0 +1,2 @@
+webpackJsonp([43916337202511],{574:function(e,t,l){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var u=l(2),a=n(u),f=l(85),r=(n(f),l(96)),c=l(128),d=n(c),m=function(){return a.default.createElement(r.Segment,{basic:!0},a.default.createElement(r.Segment,null,a.default.createElement("p",null,"Configure")),a.default.createElement(r.Segment,null,a.default.createElement(d.default,null)))};t.default=m,e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-configure-js-f595355e79ca5fbc4e4e.js.map
