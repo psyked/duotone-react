@@ -11,5 +11,3 @@ sh.echo();
 
 sh.exec('git push');
 sh.exec('git push --tags');
-
-sh.exec('npm run deploy');
