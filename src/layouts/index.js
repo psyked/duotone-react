@@ -30,31 +30,31 @@ const Layout = ({ children, data }) => (
         width='thin'
       >
         <GatsbyLink to={'/'}>
-          <Menu.Item as='a'>
+          <Menu.Item>
             <Icon name='info circle' />
             About
         </Menu.Item>
         </GatsbyLink>
         <GatsbyLink to={'/image-input'}>
-          <Menu.Item as='a'>
+          <Menu.Item>
             <Icon name='image outline' />
             Image Input
         </Menu.Item>
         </GatsbyLink>
         <GatsbyLink to={'/configure'}>
-          <Menu.Item as='a'>
+          <Menu.Item>
             <Icon name='eye dropper' />
             Configure
         </Menu.Item>
         </GatsbyLink>
         <GatsbyLink to={'/settings'}>
-          <Menu.Item as='a'>
+          <Menu.Item>
             <Icon name='cog' />
             Settings
         </Menu.Item>
         </GatsbyLink>
         <GatsbyLink to={'/download'}>
-          <Menu.Item as='a'>
+          <Menu.Item>
             <Icon name='download' />
             Download
         </Menu.Item>
