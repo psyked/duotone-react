@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "author": "James Ford <psyked84@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
+    "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "react-helmet": "^5.2.0"
@@ -15,15 +15,21 @@
     "format": "prettier --write 'src/**/*.js'",
     "start": "npm run develop",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "lint": "eslint .",
+    "version:patch": "npm --no-git-tag-version version patch",
+    "version:minor": "npm --no-git-tag-version version minor",
+    "version:major": "npm --no-git-tag-version version major",
+    "preversion": "node ./scripts/preversion.js",
+    "postversion": "node ./scripts/postversion.js"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
-    "prettier": "^1.12.0"
+    "prettier": "^1.12.0",
+    "shelljs": "^0.8.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "private": true
+  "private": true,
+  "engines": {
+    "node": ">=8.0"
+  }
 }
