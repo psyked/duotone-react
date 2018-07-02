@@ -61,13 +61,15 @@ const Layout = ({ children, data }) => (
         </GatsbyLink>
       </Sidebar>
       <Sidebar.Pusher>
-        <Segment basic style={{
-          paddingRight: 'calc(150px + 1em)',
+        <div style={{
+          paddingRight: 'calc(150px)',
           background: 'hsl(60,20%,93.3%)',
-          minHeight: '100vh'
+          minHeight: '100vh',
+          display: 'flex',
+          // flexDirection: 'column'
         }}>
           {children()}
-        </Segment>
+        </div>
       </Sidebar.Pusher>
     </Sidebar.Pushable>
   </div>

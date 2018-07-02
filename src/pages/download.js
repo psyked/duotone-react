@@ -4,11 +4,18 @@ import { Segment } from 'semantic-ui-react'
 import DuotoneRender from '../components/duotone-render'
 
 const SecondPage = () => (
-  <Segment basic>
+  <Segment basic style={{
+    flex: '1',
+    flexDirection: 'column',
+    display: 'flex'
+  }}>
     <Segment>
       <p>Download</p>
     </Segment>
-    <Segment>
+    <Segment style={{
+      flex: '1',
+      margin: 0
+    }}>
       <DuotoneRender />
     </Segment>
   </Segment>

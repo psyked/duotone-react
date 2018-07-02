@@ -6,14 +6,21 @@ import DuotoneRender from '../components/duotone-render'
 import { SET_SOURCE, SET_FILTER } from '../reducers/index'
 
 const ImageInput = ({ selectFile }) => (
-  <Segment basic>
+  <Segment basic style={{
+    flex: '1',
+    flexDirection: 'column',
+    display: 'flex'
+  }}>
     <Segment>
       <Header>Image Input</Header>
       <input type="file"
         accept="image/*"
         onChange={selectFile} />
     </Segment>
-    <Segment>
+    <Segment style={{
+      flex: '1',
+      margin: 0
+    }}>
       <DuotoneRender />
     </Segment>
   </Segment>
