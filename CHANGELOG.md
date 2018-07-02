@@ -1,5 +1,8 @@
 # Changelog
 
+#v0.0.5
+Introduce a color picker component to select duotone gradients
+
 #v0.0.4
 Working Proof of Concept - load an image locally and render a hardcoded Duotone filter
 

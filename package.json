@@ -1,7 +1,7 @@
 {
   "name": "react-duotone",
   "description": "Duotone (rebuilt in React/Gatsby)",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "James Ford <psyked84@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.273",
