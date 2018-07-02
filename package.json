@@ -7,6 +7,7 @@
     "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "react-color": "^2.14.1",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
     "semantic-ui-css": "^2.3.2",

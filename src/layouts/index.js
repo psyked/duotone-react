@@ -16,13 +16,9 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-
     <Sidebar.Pushable style={{ minHeight: '100vh' }}>
       <Sidebar
         as={Menu}
-        // animation='overlay'
-        // direction={direction}
         icon='labeled'
         inverted
         vertical
@@ -65,8 +61,7 @@ const Layout = ({ children, data }) => (
           paddingRight: 'calc(150px)',
           background: 'hsl(60,20%,93.3%)',
           minHeight: '100vh',
-          display: 'flex',
-          // flexDirection: 'column'
+          display: 'flex'
         }}>
           {children()}
         </div>

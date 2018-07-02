@@ -2,9 +2,9 @@ import React from 'react'
 import { Router } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
-import createStore from './src/state/store'
+import createStore, { initialState } from './src/state/store'
 
-const store = createStore()
+const store = createStore(initialState)
 
 export const replaceRouterComponent = ({ history }) => {
 

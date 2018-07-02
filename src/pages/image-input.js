@@ -55,17 +55,6 @@ const mapDispatchToProps = (dispatch, props) => {
                 height: imageHeight
               }
             })
-
-            dispatch({
-              type: SET_FILTER,
-              payload: {
-                filter: {
-                  id: "spotify_peachy",
-                  name: "Spotify Peachy",
-                  colours: ["#ed3ea4", "#fec76c"]
-                }
-              }
-            })
           };
         };
 

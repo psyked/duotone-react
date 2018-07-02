@@ -3,8 +3,14 @@ import Link from 'gatsby-link'
 import { Segment } from 'semantic-ui-react'
 
 const SecondPage = () => (
-  <Segment>
-    <p>Index</p>
+  <Segment basic style={{
+    flex: '1',
+    flexDirection: 'column',
+    display: 'flex'
+  }}>
+    <Segment>
+      <p>About</p>
+    </Segment>
   </Segment>
 )
 

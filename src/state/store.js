@@ -1,7 +1,15 @@
 import { createStore } from 'redux';
 import rootReducer from '../reducers/index';
 
-export default function configureStore(initialState = {}) {
+export const initialState = {
+    filter: {
+        id: "spotify_peachy",
+        name: "Spotify Peachy",
+        colours: ["#ed3ea4", "#fec76c"]
+    }
+}
+
+export default function configureStore(initialState) {
     const store = createStore(rootReducer, initialState);
 
     if (module.hot) {
