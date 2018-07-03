@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 import { Segment, Header, Input } from 'semantic-ui-react'
 import DuotoneRender from '../components/duotone-render'
 import { connect } from 'react-redux';
-import { SET_BLUR_VALUE } from '../reducers';
+import { SET_BLUR_VALUE, SET_TEXT_VALUE } from '../reducers';
 
-const SecondPage = ({ blurValue, updateBlurValue }) => (
+const SecondPage = ({ blurValue, updateBlurValue, textOverlay, updateTextValue }) => (
   <Segment basic style={{
     flex: '1',
     flexDirection: 'column',
@@ -15,6 +15,7 @@ const SecondPage = ({ blurValue, updateBlurValue }) => (
       <Header>Settings</Header>
       <Input type='range' value={blurValue} min={0} max={25} onChange={updateBlurValue} />
       Blur level: {blurValue}
+      <Input type='text' value={textOverlay} onChange={updateTextValue} />
     </Segment>
     <Segment style={{
       flex: '1',
@@ -25,20 +26,30 @@ const SecondPage = ({ blurValue, updateBlurValue }) => (
   </Segment>
 )
 
-const mapStateToProps = ({ blurValue }) => {
+const mapStateToProps = ({ blurValue, textOverlay }) => {
   return {
-    blurValue
+    blurValue,
+    textOverlay
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
     updateBlurValue(event, { value }) {
-      console.log(value);
+      // console.log(value);
       dispatch({
         type: SET_BLUR_VALUE,
         payload: {
           blurValue: value
+        }
+      })
+    },
+    updateTextValue(event, { value }) {
+      // console.log(value);
+      dispatch({
+        type: SET_TEXT_VALUE,
+        payload: {
+          textOverlay: value
         }
       })
     }
