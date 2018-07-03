@@ -1,5 +1,8 @@
 # Changelog
 
+#v0.0.6
+Add interface elements for controllable blur levels
+
 #v0.0.5
 Introduce a color picker component to select duotone gradients
 
