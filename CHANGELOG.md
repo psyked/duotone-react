@@ -1,5 +1,8 @@
 # Changelog
 
+#v0.0.7
+Add interface elements for controllable text overlay
+
 #v0.0.6
 Add interface elements for controllable blur levels
 
