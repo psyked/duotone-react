@@ -6,7 +6,8 @@ export const initialState = {
         id: "spotify_peachy",
         name: "Spotify Peachy",
         colours: ["#ed3ea4", "#fec76c"]
-    }
+    },
+    blurValue: 0
 }
 
 export default function configureStore(initialState) {

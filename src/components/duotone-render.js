@@ -12,7 +12,7 @@ const hexToRgb = (hex) => {
 
 class DuotoneRender extends Component {
     render() {
-        const {imageData, filter} = this.props
+        const {imageData, filter, blurValue} = this.props
         return (
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{
                 width:'100%',
@@ -31,6 +31,7 @@ class DuotoneRender extends Component {
                     <feFuncB type="table" tableValues={filter.colours.map((colour)=>hexToRgb(colour).b/255).join(' ')}></feFuncB>
                     <feFuncA type="table" tableValues="0 1"></feFuncA>
                 </feComponentTransfer>}
+                <feGaussianBlur stdDeviation={blurValue} />
             </filter>}
             <image x="0" y="0" width="100%" height="100%" xlinkHref={imageData} filter={filter?`url(#${filter.id})`:''} />
           </svg>
@@ -39,10 +40,11 @@ class DuotoneRender extends Component {
 }
 
 
-const mapStateToProps = ({imageData, filter}) => {
+const mapStateToProps = ({imageData, filter, blurValue}) => {
     return {
         imageData,
-        filter
+        filter,
+        blurValue
     }
 }
 

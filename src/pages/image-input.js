@@ -59,8 +59,6 @@ const mapDispatchToProps = (dispatch, props) => {
         };
 
         reader.readAsDataURL(input.files[0]);
-      } else {
-        console.log('no image?')
       }
     }
   }
