@@ -1,5 +1,8 @@
 # Changelog
 
+#v0.0.8
+Add basic image output, potato quality
+
 #v0.0.7
 Add interface elements for controllable text overlay
 
