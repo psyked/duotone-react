@@ -5,10 +5,12 @@ export const SET_TEXT_VALUE = 'SET_TEXT_VALUE'
 
 const reducer = (state, { type, payload }) => {
     if (type === SET_SOURCE) {
-        const { data: imageData } = payload
+        const { data: imageData, width, height } = payload
         return {
             ...state,
-            imageData
+            imageData,
+            width,
+            height
         }
     } else if (type === SET_FILTER) {
         const { filter } = payload
