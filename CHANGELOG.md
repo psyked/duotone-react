@@ -1,5 +1,8 @@
 # Changelog
 
+#v0.0.9
+Save image downloads at the original resolution (non potato quality)
+
 #v0.0.8
 Add basic image output, potato quality
 
