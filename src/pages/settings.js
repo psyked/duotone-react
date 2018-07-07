@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Segment, Header, Input } from 'semantic-ui-react'
+import { Segment, Header, Input, Form } from 'semantic-ui-react'
 import DuotoneRender from '../components/duotone-render'
 import { connect } from 'react-redux';
 import { SET_BLUR_VALUE, SET_TEXT_VALUE } from '../reducers';
@@ -13,9 +13,16 @@ const SecondPage = ({ blurValue, updateBlurValue, textOverlay, updateTextValue }
   }}>
     <Segment>
       <Header>Settings</Header>
-      <Input type='range' value={blurValue} min={0} max={25} onChange={updateBlurValue} />
-      Blur level: {blurValue}
-      <Input type='text' value={textOverlay} onChange={updateTextValue} />
+      <Form>
+        <Form.Field>
+          <label>Blur level:</label>
+          <Input type='range' value={blurValue} min={0} max={25} onChange={updateBlurValue} />
+        </Form.Field>
+        <Form.Field>
+          <label>Text overlay:</label>
+          <Input type='text' value={textOverlay} onChange={updateTextValue} />
+        </Form.Field>
+      </Form>
     </Segment>
     <Segment style={{
       flex: '1',
